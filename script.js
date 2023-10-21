@@ -9,18 +9,32 @@ document.addEventListener("mousemove", function(dets) {
 })
 
 var h4all = document.querySelectorAll("#nav h4")
+// h4all.forEach(function(elem){
+//     elem.addEventListener("mouseenter", function(){
+//         crsr.style.scale = 3.5
+//         crsr.style.border = "1px solid white"
+//         crsr.style.backgroundColor = "transparent"
+//     })
+//     elem.addEventListener("mouseleave", function(){
+//         crsr.style.scale = 1
+//         crsr.style.border = "0px solid #befc12"
+//         crsr.style.backgroundColor = "#befc12"
+//     })
+// })
+
 h4all.forEach(function(elem){
     elem.addEventListener("mouseenter", function(){
-        crsr.style.scale = 3.5
-        crsr.style.border = "1px solid white"
-        crsr.style.backgroundColor = "transparent"
-    })
+        crsr.style.transform = "scale(3.5)";
+        crsr.style.border = "1px solid white";
+        crsr.style.backgroundColor = "transparent";
+    });
     elem.addEventListener("mouseleave", function(){
-        crsr.style.scale = 1
-        crsr.style.border = "0px solid #befc12"
-        crsr.style.backgroundColor = "#befc12"
-    })
-})
+        crsr.style.transform = "scale(1)";
+        crsr.style.border = "0px solid #befc12";
+        crsr.style.backgroundColor = "#befc12";
+    });
+});
+
 
 
 gsap.to("#nav",{

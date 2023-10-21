@@ -31,7 +31,23 @@ html, body {
     font-size: 1rem;
     font-weight: 700;
 }
-
+#nav .btn{
+    padding-left: 80px;
+    gap: 30px;
+    align-items: center;     
+    display: flex;
+    justify-content: flex-end;
+}
+#nav .btn button{
+    font-size: 17px;
+    font-weight: 600;
+    height: 57px;
+    width: 170px;
+    background-color: black;
+    border: 2px solid #ace022;
+    border-radius: 55px;
+    
+}
 #cursor{
     height: 20px;
     width: 20px;
@@ -225,13 +241,13 @@ video {
     overflow: hidden;
     height: 80%;
     width: 22%;
-     
+    transition: transform 0.3s;
     border-radius: 12px;
     background-size: cover;
     background-position: center;
 }
 .card:hover{
-    transform: rotate3d(-1,1,0, 20deg);
+    transform: rotate(-1, 1, 0 -20deg);
 }
 
 #card1{
@@ -434,27 +450,14 @@ video {
     line-height: 20px;
     margin-bottom: 8px;
 }
-#f5 p{
-    font-size: 10px;
-    text-transform: uppercase;
-    color: black;
-    font-weight: 600;
-    line-height: 20px;
-    
+#f5 {
+    position: absolute;
+    bottom: 10%;
+    z-index: 2;
 }
- 
-#f5{
-    padding: 0 0 20px 350px ;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 150px;
-    background-color: #bbe83d;
-    /* background: linear-gradient(to left bottom, #d5e5d993,#98c90f); */
-    z-index: 99;
 
-}
-#f5 p{
-    font-size: 15px;
+#f5 p {
+    padding-left: 270px;
+    font-size: 18px; 
+    color: black;
 }
